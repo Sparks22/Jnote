@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_refresh"
+        android:title="@string/menu_refresh">
+
+    </item>
+    <item
+        android:id="@+id/menu_edit"
+        android:title="@string/menu_edit">
+
+    </item>
+
+    <item
+        android:id="@+id/menu_theme"
+        android:title="@string/menu_theme">
+        <!--<menu>
+            <item
+                android:id="@+id/menu_theme_listview"
+                android:title="@string/menu_theme_listview" />
+            <item
+                android:id="@+id/menu_theme_gridview"
+                android:title="@string/menu_theme_gridview" />
+            <item
+                android:id="@+id/menu_theme_gridlistview"
+                android:title="@string/menu_theme_gridlistview" />
+        </menu>-->
+
+    </item>
+
+    <item
+        android:id="@+id/menu_quit"
+        android:title="@string/menu_quit">
+
+    </item>
+
+</menu>

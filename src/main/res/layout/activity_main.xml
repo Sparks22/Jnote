@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/dr"
+    >
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+           <androidx.appcompat.widget.Toolbar
+               android:id="@+id/toolbar"
+               android:layout_width="match_parent"
+               android:layout_height="?attr/actionBarSize"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_marginStart="0dp"
+               android:layout_marginTop="0dp"
+               app:title="@string/app_name"
+               app:titleMarginStart="320px"
+               android:background="@color/green"
+               />
+
+
+       <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+           android:id="@+id/sfl"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@+id/toolbar"
+           android:layout_alignParentStart="true"
+           android:layout_marginStart="0dp"
+           android:layout_marginTop="0dp">
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recyclerview"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentBottom="true"
+               android:background="@color/light_Grey" />
+       </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/fab"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentBottom="true"
+           android:layout_marginEnd="96px"
+           android:layout_marginBottom="166px"
+           android:clickable="true"
+           android:src="@drawable/baseline_edit_24" />
+   </RelativeLayout>
+        <include
+            android:layout_height="match_parent"
+            android:layout_width="920px"
+            android:layout_gravity="start"
+            layout="@layout/ch"/>
+</androidx.drawerlayout.widget.DrawerLayout>

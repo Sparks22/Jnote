@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/green"
+        >
+
+        <EditText
+            android:layout_width="720px"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch_edit"
+            />
+        <Button
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/green_g"
+            android:text="+"
+            android:id="@+id/ch_add"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="全部"
+        android:background="@color/green_g"
+        android:id="@+id/ch_qb"
+        />
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

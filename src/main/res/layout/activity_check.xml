@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.note.activity.CheckActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        >
+        <TextView
+            android:id="@+id/check_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="15dp"
+            android:text="111"
+            android:textColor="@color/black"
+            android:background="@color/red"
+            android:includeFontPadding="false"
+            />
+        <TextView
+            android:id="@+id/check_tag"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="15dp"
+            android:text="111"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/black"
+            android:background="@color/green"
+            android:includeFontPadding="false"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_title"
+        android:hint="请输入标题"
+        android:lines="1"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+
+        android:textColor="@color/black">
+    </TextView>
+</LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_bottom"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="请输入文本信息"
+                android:textSize="15dp"
+                android:gravity="top"
+                android:scrollbars="vertical"
+                android:background="#FFFFFF"
+                android:textColor="@color/black">
+            </TextView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

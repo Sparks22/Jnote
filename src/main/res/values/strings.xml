@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Jnote</string>
+    <string name="titletext">标题</string>
+    <string name="titlecontent">内容</string>
+    <string name="menu_quit">云端恢复</string>
+    <string name="menu_edit">编辑</string>
+    <string name="menu_refresh">保存</string>
+    <string name="menu_theme">上传云端</string>
+    <string name="menu_theme_listview">列表主题</string>
+    <string name="menu_theme_gridview">网格</string>
+    <string name="menu_theme_gridlistview">瀑布流</string>
+    <string name="delete">删除</string>
+</resources>

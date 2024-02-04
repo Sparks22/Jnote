@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.note.activity.CalculatorActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="0,1,2,3"
+
+    >
+
+        <TableRow
+            style="@style/rowStyle"
+            android:id="@+id/tr_one"
+            android:layout_marginTop="300dp"
+            >
+            <Button
+                style="@style/btnStyle"
+                android:text="C"/>
+            <Button
+                style="@style/btnStyle"
+                android:text="⬅"/>
+            <Button
+                style="@style/btnStyle"
+                android:text="+"/>
+            <Button
+                style="@style/btnStyle"
+                android:text="-"/>
+
+        </TableRow>
+
+    <TableRow
+        style="@style/rowStyle"
+        android:id="@+id/tr_two"
+        >
+        <Button
+            style="@style/btnStyle"
+            android:text="7"/>
+        <Button
+            style="@style/btnStyle"
+            android:text="8"/>
+        <Button
+            style="@style/btnStyle"
+            android:text="9"/>
+        <Button
+            style="@style/btnStyle"
+            android:text="X"/>
+
+    </TableRow>
+    <TableRow
+        style="@style/rowStyle"
+        android:id="@+id/tr_there"
+        >
+        <Button
+            style="@style/btnStyle"
+            android:text="4"/>
+        <Button
+            style="@style/btnStyle"
+            android:text="5"/>
+        <Button
+            style="@style/btnStyle"
+            android:text="6"/>
+        <Button
+            style="@style/btnStyle"
+            android:text="/"/>
+
+    </TableRow>
+    <TableRow
+        style="@style/rowStyle"
+        android:id="@+id/tr_four"
+        >
+        <Button
+            style="@style/btnStyle"
+            android:text="1"/>
+        <Button
+            style="@style/btnStyle"
+            android:text="2"/>
+        <Button
+            style="@style/btnStyle"
+            android:text="3"/>
+        <Button
+            style="@style/btnStyle"
+            android:text="."/>
+
+    </TableRow>
+    <TableRow
+        style="@style/rowStyle"
+        android:id="@+id/tr_five"
+        >
+        <Button
+            style="@style/btnStyle"
+            android:layout_span="2"
+            android:text="0"/>
+        <Button
+            style="@style/btnStyle"
+            android:layout_span="2"
+            android:text="="/>
+
+
+    </TableRow>
+    </TableLayout>
